@@ -1,0 +1,24 @@
+{
+  "name": "mithril-parallax",
+  "version": "1.0.0",
+  "description": "Move target inside a zone on window scroll",
+  "main": "mithril-parallax.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mithril",
+    "parallax",
+    "scroll"
+  ],
+  "author": "makepost <makepost@firemail.cc>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makepost/mithril-parallax.git"
+  },
+  "bugs": {
+    "url": "https://github.com/makepost/mithril-parallax/issues"
+  },
+  "homepage": "https://github.com/makepost/mithril-parallax#readme"
+}
