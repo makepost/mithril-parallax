@@ -57,7 +57,7 @@
       }
 
       function handleScroll() {
-        ctrl.scrollY = document.body.scrollTop;
+        ctrl.scrollY = document.body.scrollTop || window.scrollY;
 
         if (!ctrl.ticking) {
           window.requestAnimationFrame(function () {
