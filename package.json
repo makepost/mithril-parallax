@@ -1,6 +1,6 @@
 {
   "name": "mithril-parallax",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Move target inside a zone on window scroll",
   "main": "mithril-parallax.js",
   "scripts": {
