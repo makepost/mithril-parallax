@@ -14,8 +14,12 @@
       ];
       ctrl.target = target;
 
-      function power(pCtrl) {
-        return pCtrl.windowHeight * 2;
+      function power() {
+        if (window.innerWidth / window.innerHeight < 4 / 3) {
+          return window.innerHeight;
+        } else {
+          return window.innerHeight * 2;
+        }
       }
 
       function target(zoneElem) {
@@ -63,6 +67,10 @@
       return (
         m('.demo-section', { style: Styles.section }, [
           ctrl.text.map(Paragraph),
+          m('style', [
+            '.mpx-zone img { left: -100%; width: 300%; }',
+            '@media (min-aspect-ratio: 4/3) { .mpx-zone img { left: 0; width: 100%; } }',
+          ]),
         ])
       );
     },
@@ -75,11 +83,8 @@
 
     target: {
       bottom: 0,
-      left: 0,
       opacity: 0.4,
       position: 'absolute',
-      right: 0,
-      width: '100%',
     },
 
     zone: {
