@@ -87,7 +87,7 @@
         }
 
         var translateY = ctrl.offset + aboveViewport * ctrl.power;
-        ctrl.refs.target.style.transform = 'translateY(' + translateY + 'px';
+        ctrl.refs.target.style.transform = 'translateY(' + translateY + 'px)';
       }
     },
 
